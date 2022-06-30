@@ -7,7 +7,7 @@ namespace FinalProject
 {
     public class Animal
     {
-        public int Legs, Index;
+        public int Index, Legs, Size, /*kg*/ Speed; /*mph*/
         public bool Land, Water, ColorChange, Wings, Fly, Fins, Gills, Lungs, Scales, Hair, Carnivore, Omnivore, Herbivore, Poisonous, FindingNemo;
         public string Name, Parent;
     }
@@ -32,6 +32,8 @@ namespace FinalProject
         {
             this.Index = 0;
             this.Name = "gorilla";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 2;
             this.Land = true;
             this.Water = false;
@@ -48,6 +50,8 @@ namespace FinalProject
         {
             this.Index = 1;
             this.Name = "cheetah";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 4;
             this.Land = true;
             this.Water = false;
@@ -64,6 +68,8 @@ namespace FinalProject
         {
             this.Index = 2;
             this.Name = "blue whale";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 0;
             this.Land = false;
             this.Water = true;
@@ -80,6 +86,8 @@ namespace FinalProject
         {
             this.Index = 3;
             this.Name = "zebra";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 4;
             this.Land = true;
             this.Water = false;
@@ -96,6 +104,8 @@ namespace FinalProject
         {
             this.Index = 4;
             this.Name = "dolphin";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 0;
             this.Land = false;
             this.Water = true;
@@ -126,6 +136,8 @@ namespace FinalProject
         {
             this.Index = 5;
             this.Name = "alligator";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 4;
             this.Land = true;
             this.Water = true;
@@ -143,6 +155,8 @@ namespace FinalProject
         {
             this.Index = 6;
             this.Name = "anaconda";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 0;
             this.Land = true;
             this.Water = true;
@@ -160,6 +174,8 @@ namespace FinalProject
         {
             this.Index = 7;
             this.Name = "rattlesnake";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 0;
             this.Land = true;
             this.Water = false;
@@ -177,6 +193,8 @@ namespace FinalProject
         {
             this.Index = 8;
             this.Name = "sea turtle";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 4;
             this.Land = true;
             this.Water = true;
@@ -194,6 +212,8 @@ namespace FinalProject
         {
             this.Index = 9;
             this.Name = "chameleon";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 4;
             this.Land = true;
             this.Water = false;
@@ -234,6 +254,8 @@ namespace FinalProject
         {
             this.Index = 10;
             this.Name = "frog";
+            this.Size = 0;
+            this.Speed = 0;
         }
     }
     public abstract class Bird : Animal
@@ -259,6 +281,8 @@ namespace FinalProject
         {
             this.Index = 11;
             this.Name = "pelican";
+            this.Size = 0;
+            this.Speed = 0;
             this.Water = false;
             this.Fly = true;
             this.Carnivore = true;
@@ -273,6 +297,8 @@ namespace FinalProject
         {
             this.Index = 12;
             this.Name = "falcon";
+            this.Size = 0;
+            this.Speed = 0;
             this.Water = false;
             this.Fly = true;
             this.Carnivore = true;
@@ -287,6 +313,8 @@ namespace FinalProject
         {
             this.Index = 13;
             this.Name = "hummingbird";
+            this.Size = 0;
+            this.Speed = 0;
             this.Water = false;
             this.Fly = true;
             this.Carnivore = false;
@@ -301,6 +329,8 @@ namespace FinalProject
         {
             this.Index = 14;
             this.Name = "penguin";
+            this.Size = 0;
+            this.Speed = 0;
             this.Water = true;
             this.Fly = false;
             this.Carnivore = true;
@@ -315,6 +345,8 @@ namespace FinalProject
         {
             this.Index = 15;
             this.Name = "ostrich";
+            this.Size = 0;
+            this.Speed = 0;
             this.Water = false;
             this.Fly = false;
             this.Carnivore = false;
@@ -348,6 +380,8 @@ namespace FinalProject
         {
             this.Index = 16;
             this.Name = "great white shark";
+            this.Size = 0;
+            this.Speed = 0;
             this.Scales = true;
             this.Carnivore = true;
             this.Omnivore = false;
@@ -360,6 +394,8 @@ namespace FinalProject
         {
             this.Index = 17;
             this.Name = "clownfish";
+            this.Size = 0;
+            this.Speed = 0;
             this.Scales = true;
             this.Carnivore = false;
             this.Omnivore = true;
@@ -372,6 +408,8 @@ namespace FinalProject
         {
             this.Index = 18;
             this.Name = "stingray";
+            this.Size = 0;
+            this.Speed = 0;
             this.Scales = true;
             this.Carnivore = true;
             this.Omnivore = false;
@@ -384,6 +422,8 @@ namespace FinalProject
         {
             this.Index = 19;
             this.Name = "seahorse";
+            this.Size = 0;
+            this.Speed = 0;
             this.Scales = false;
             this.Carnivore = true;
             this.Omnivore = false;
@@ -407,6 +447,8 @@ namespace FinalProject
         {
             this.Index = 20;
             this.Name = "octopus";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 8;
             this.Land = false;
             this.Water = true;
@@ -427,6 +469,8 @@ namespace FinalProject
         {
             this.Index = 21;
             this.Name = "cuttlefish";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 8;
             this.Land = false;
             this.Water = true;
@@ -447,6 +491,8 @@ namespace FinalProject
         {
             this.Index = 22;
             this.Name = "black widow spider";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 8;
             this.Land = true;
             this.Water = false;
@@ -467,6 +513,8 @@ namespace FinalProject
         {
             this.Index = 23;
             this.Name = "starfish";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 5;
             this.Land = false;
             this.Water = true;
@@ -487,6 +535,8 @@ namespace FinalProject
         {
             this.Index = 24;
             this.Name = "snail";
+            this.Size = 0;
+            this.Speed = 0;
             this.Legs = 0;
             this.Land = true;
             this.Water = false;
@@ -506,12 +556,13 @@ namespace FinalProject
         public static void Main(string[] args)
         {
             Title();
-            NameandIntro();
-            HotelRiddle();
-            LogicRiddle();
-            DarwinRiddleIntro();
+            //NameandIntro();
+            //HotelRiddle();
+            //LogicRiddle();
+            //DarwinRiddleIntro();
+            DarwinRiddleNotes();
             DarwinRiddle();
-            Outro();
+            //Outro();
         }
         public static void Title()
         {
@@ -628,7 +679,7 @@ namespace FinalProject
 
             Random x = new Random();
             int phantom = x.Next(1, 101); //first number included, second number not
-            while (phantom > 46 && phantom < 54)
+            while (phantom > 47 && phantom < 53)
             {
                 phantom = x.Next(1, 101);
             }
@@ -1065,7 +1116,7 @@ namespace FinalProject
             Console.WriteLine("\t\t\tGUESS WHO RIDDLE");
             Console.WriteLine();
             Thread.Sleep(milliseconds);
-            Console.WriteLine("Animals Found:");
+            Console.WriteLine("Animals Found");
             Console.WriteLine();
             Thread.Sleep(milliseconds);
             Console.WriteLine("Mammals:\t Gorilla, Cheetah, Blue Whale, Zebra, Dolphin");
@@ -1078,10 +1129,10 @@ namespace FinalProject
             Thread.Sleep(milliseconds);
             Console.WriteLine("Fish:\t\t Great White Shark, Clownfish, Stingray, Seahorse");
             Thread.Sleep(milliseconds);
-            Console.WriteLine("Invertabrates:\t Octopus, Cuttlefish, Black Widow Spider, Starfish, Snail");
+            Console.WriteLine("Invertebrates:\t Octopus, Cuttlefish, Black Widow Spider, Starfish, Snail");
             Console.WriteLine();
             Thread.Sleep(milliseconds2);
-            Console.WriteLine("Animal Qualities:");
+            Console.WriteLine("Animal Qualities");
             Console.WriteLine();
             Thread.Sleep(milliseconds);
             Console.WriteLine("Land based, Water based");
@@ -1095,7 +1146,7 @@ namespace FinalProject
             Console.WriteLine("Finding Nemo character");
             Thread.Sleep(milliseconds2);
             Console.WriteLine();
-            Console.WriteLine("Questions you can ask:");
+            Console.WriteLine("Questions you can ask");
             Console.WriteLine();
             Thread.Sleep(milliseconds);
             Console.WriteLine("Is it a(n) mammal(reptile, amphibian, bird, fish, invertebrate)? -- or -- mammal(reptile, amphibian, bird, fish, invertebrate)?");
@@ -1125,12 +1176,49 @@ namespace FinalProject
             Thread.Sleep(milliseconds);
             Console.WriteLine();
         }
+        public static void DarwinRiddleNotesRepeat()
+        {
+            Console.WriteLine("\t\t\tGUESS WHO RIDDLE");
+            Console.WriteLine();
+
+            Console.WriteLine("Animals Found");
+            Console.WriteLine();
+            Console.WriteLine("Mammals:\t Gorilla, Cheetah, Blue Whale, Zebra, Dolphin");
+            Console.WriteLine("Reptiles:\t Alligator, Anaconda, Sea Turtle, Chameleon, Rattlesnake");
+            Console.WriteLine("Amphibians:\t Frog");
+            Console.WriteLine("Birds:\t\t Pelican, Hummingbird, Falcon, Penguin, Ostrich");
+            Console.WriteLine("Fish:\t\t Great White Shark, Clownfish, Stingray, Seahorse");
+            Console.WriteLine("Invertebrates:\t Octopus, Cuttlefish, Black Widow Spider, Starfish, Snail");
+            Console.WriteLine();
+            Console.WriteLine("Animal Qualities");
+            Console.WriteLine();
+            Console.WriteLine("Land based, Water based");
+            Console.WriteLine("Legs, Wings, Fins, Gills, Lungs, Scales, Hair");
+            Console.WriteLine("Capable of flight, Capable of color change, Poisonous");
+            Console.WriteLine("Carnivore, Omnivore, Herbivore");
+            Console.WriteLine("Finding Nemo character");
+            Console.WriteLine();
+            Console.WriteLine("Questions you can ask");
+            Console.WriteLine();
+            Console.WriteLine("Is it a(n) mammal(reptile, amphibian, bird, fish, invertebrate)? -- or -- mammal(reptile, amphibian, bird, fish, invertebrate)?");
+            Console.WriteLine("Does it have 0(2,4,5,8) legs? -- or -- 0(2,4,5,8) legs?");
+            Console.WriteLine("Does it live in water? -- or -- water?");
+            Console.WriteLine("Does it live on land? -- or -- land?");
+            Console.WriteLine("Does it have wings(fins, gills, lungs, scales, hair)? -- or -- wings(fins, gills, lungs, scales, hair)?");
+            Console.WriteLine("Can it fly(change color)? -- or -- fly(change color)?");
+            Console.WriteLine("Is it poisonous? -- or -- poisonous?");
+            Console.WriteLine("Is it a(n) carnivore(omnivore, herbivore)? -- or -- carnivore(omnivore, herbivore)?");
+            Console.WriteLine("Is it a character in Finding Nemo? -- or -- nemo?");
+            Console.WriteLine();
+            Console.WriteLine("Can you guess my favorite?");
+            Console.WriteLine("I'll give you 5 questions.");
+            Console.WriteLine("Good Luck!");
+            Console.WriteLine();
+        }
         public static void DarwinRiddle()
         {
             int milliseconds = 2000;
             int milliseconds2 = 4000;
-
-            DarwinRiddleNotes();
 
             Animal favorite = GetAnimal();
 
@@ -1402,7 +1490,7 @@ namespace FinalProject
                         Console.WriteLine();
                     }
                 }
-                else if (question == "can it change color?" || question == "color change?")
+                else if (question == "can it change color?" || question == "change color?")
                 {
                     if (favorite.ColorChange == true)
                     {
@@ -1530,6 +1618,7 @@ namespace FinalProject
                     Thread.Sleep(milliseconds);
                     Console.Clear();
 
+                    DarwinRiddleNotesRepeat();
                     DarwinRiddle();
                 }
             }
