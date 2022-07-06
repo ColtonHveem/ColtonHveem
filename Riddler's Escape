@@ -719,6 +719,8 @@ namespace FinalProject
             int floor;
             bool number = Int32.TryParse(input, out floor);
             int count = 0;
+            int hint = 0;
+            int hintintro = 0;
 
             while (count <= 5)
             {
@@ -727,7 +729,6 @@ namespace FinalProject
                     string clue;
                     clue = input.ToString();
                     clue = clue.ToLower();
-                    int hint = 0;
 
                     if (clue != "ghost busters")
                     {
@@ -736,6 +737,7 @@ namespace FinalProject
                         Console.Write("Enter Floor: ");
                         input = Console.ReadLine();
                         number = Int32.TryParse(input, out floor);
+                        Console.WriteLine();
                     }
 
                     if (clue == "ghost busters")
@@ -747,28 +749,33 @@ namespace FinalProject
                         }
                         while (hint < 1)
                         {
-                            Console.WriteLine();
-                            Console.WriteLine("This is the Ghost Busters hotline.");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine("I see you got assigned the phantom at Hotel O'Plenty.");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine("Sorry we couldn't expel it for you. We are stretched thin with ghost calls at the moment.");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine("But I can spare time for one inquiry about our research on the phantom at Hotel O'Plenty.");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine("I have information on a few of your phantom's behaviors.");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine();
-                            Console.WriteLine("You can ask one of the following questions:");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine("Does the phantom visit floors that are divisible by 4 -- or -- 4?");
-                            Console.WriteLine("Does the phantom visit floors that are divisible by 5 -- or -- 5?");
-                            Console.WriteLine("Does the phantom visit floors that are prime numbers -- or -- prime?");
-                            Console.WriteLine("Does the phantom visit floors that are odd numbers -- or -- odd?");
-                            Thread.Sleep(milliseconds2);
-                            Console.WriteLine();
-                            Console.WriteLine("What would you like to know?");
-                            Console.WriteLine();
+                            if (hintintro < 1)
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("This is the Ghost Busters hotline.");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine("I see you got assigned the phantom at Hotel O'Plenty.");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine("Sorry we couldn't expel it for you. We are stretched thin with ghost calls at the moment.");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine("But I can spare time for one inquiry about our research on the phantom at Hotel O'Plenty.");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine("I have information on a few of your phantom's behaviors.");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine();
+                                Console.WriteLine("You can ask one of the following questions:");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine("Does the phantom visit floors that are divisible by 4 -- or -- 4?");
+                                Console.WriteLine("Does the phantom visit floors that are divisible by 5 -- or -- 5?");
+                                Console.WriteLine("Does the phantom visit floors that are prime numbers -- or -- prime?");
+                                Console.WriteLine("Does the phantom visit floors that are odd numbers -- or -- odd?");
+                                Thread.Sleep(milliseconds2);
+                                Console.WriteLine();
+                                Console.WriteLine("What would you like to know?");
+                                Console.WriteLine();
+                                hintintro++;
+                            }
+
                             Console.Write("Enter Question: ");
 
                             string behavior = Console.ReadLine();
@@ -776,7 +783,7 @@ namespace FinalProject
 
                             if (behavior == "Does the phantom visit floors that are divisible by 4?" || behavior == "4?")
                             {
-                                if (floor % 4 == 0)
+                                if (phantom % 4 == 0)
                                 {
                                     Console.WriteLine("Yes");
                                 }
@@ -787,7 +794,7 @@ namespace FinalProject
                             }
                             else if (behavior == "Does the phantom visit floors that are divisible by 5?" || behavior == "5?")
                             {
-                                if (floor % 5 == 0)
+                                if (phantom % 5 == 0)
                                 {
                                     Console.WriteLine("Yes");
                                 }
@@ -798,7 +805,7 @@ namespace FinalProject
                             }
                             else if (behavior == "Does the phantom visit floors that are prime numbers?" || behavior == "prime?")
                             {
-                                if (floor == 2 || floor == 3 || floor == 5 || floor == 7 || floor == 11 || floor == 13 || floor == 17 || floor == 19 || floor == 23 || floor == 29 || floor == 31 || floor == 37 || floor == 41 || floor == 43 || floor == 47 || floor == 53 || floor == 59 || floor == 61 || floor == 67 || floor == 71 || floor == 73 || floor == 79 || floor == 83 || floor == 89 || floor == 97)
+                                if (phantom == 2 || phantom == 3 || phantom == 5 || phantom == 7 || phantom == 11 || phantom == 13 || phantom == 17 || phantom == 19 || phantom == 23 || phantom == 29 || phantom == 31 || phantom == 37 || phantom == 41 || phantom == 43 || phantom == 47 || phantom == 53 || phantom == 59 || phantom == 61 || phantom == 67 || phantom == 71 || phantom == 73 || phantom == 79 || phantom == 83 || phantom == 89 || phantom == 97)
                                 {
                                     Console.WriteLine("Yes");
                                 }
@@ -809,7 +816,7 @@ namespace FinalProject
                             }
                             else if (behavior == "Does the phantom visit floors that are odd numbers?" || behavior == "odd?")
                             {
-                                if (floor % 2 == 1)
+                                if (phantom % 2 == 1)
                                 {
                                     Console.WriteLine("Yes");
                                 }
@@ -818,11 +825,20 @@ namespace FinalProject
                                     Console.WriteLine("No");
                                 }
                             }
-                            Thread.Sleep(milliseconds);
-                            Console.WriteLine();
-                            Console.WriteLine("Thanks for calling Ghost Busters! Good luck with your phantom!");
-                            Console.WriteLine();
+                            else
+                            {
+                                Console.WriteLine("Sorry, I only have research on a few topics. I am very busy. Please ask about one of the topics I have researched.");
+                                Console.WriteLine();
+                                hint--;
+                            }
                             hint++;
+                            if (hint == 1)
+                            {
+                                Thread.Sleep(milliseconds);
+                                Console.WriteLine();
+                                Console.WriteLine("Thanks for calling Ghost Busters! Good luck with your phantom!");
+                                Console.WriteLine();
+                            }
                         }
                         Console.Write("Enter a floor: ");
                         input = Console.ReadLine();
