@@ -1555,7 +1555,7 @@ namespace Riddler_Escape
                         Console.WriteLine();
                     }
                 }
-                else if (question == "is it larger than a bluewhale?" || question == "larger than bluewhale?")
+                else if (question == "is it larger than a blue whale?" || question == "larger than blue whale?")
                 {
                     if (favMinSize > Zoo["BlueWhale"].Size)
                     {
@@ -2005,7 +2005,7 @@ namespace Riddler_Escape
                         Console.WriteLine();
                     }
                 }
-                else if (question == "is it smaller than a bluewhale?" || question == "smaller than bluewhale?")
+                else if (question == "is it smaller than a blue whale?" || question == "smaller than blue whale?")
                 {
                     if (favMaxSize < Zoo["BlueWhale"].Size)
                     {
@@ -2455,7 +2455,7 @@ namespace Riddler_Escape
                         Console.WriteLine();
                     }
                 }
-                else if (question == "is it faster than a bluewhale?" || question == "faster than bluewhale?")
+                else if (question == "is it faster than a blue whale?" || question == "faster than blue whale?")
                 {
                     if (favMinSpeed > Zoo["BlueWhale"].Speed)
                     {
@@ -2905,7 +2905,7 @@ namespace Riddler_Escape
                         Console.WriteLine();
                     }
                 }
-                else if (question == "is it slower than a bluewhale?" || question == "slower than bluewhale?")
+                else if (question == "is it slower than a blue whale?" || question == "slower than blue whale?")
                 {
                     if (favMaxSpeed < Zoo["BlueWhale"].Speed)
                     {
